@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.principal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #CCC;
+}
+
+.inputs{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.erro{
+    display: none;
+    padding: 8px;
+    background: black;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    margin-top: 15px;
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+}
+
+.mostrarErro{
+    display: block;
+}
+
+.c-inputs{
+    width: 300px;
+    height: 70px;
+    padding: 30px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.c-inputs label{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: #222;
+}
+
+.c-inputs input{
+    outline: 0;
+    border: 0;
+    border: 2px solid #333;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.c-inputs input[type="button"]{
+    background: rgb(22, 133, 37);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .6s;
+}
+
+.c-inputs input[type="button"]:hover{
+    background: rgb(20, 97, 30);
+    cursor: pointer;
+}
+
+.adicionarImg{
+    width: 500px;
+    height: 500px;
+}
+
+.adicionarImg img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 40px;
+    box-shadow: 10px 15px 40px #333;
+}
+
+.removerImg{
+    display: none;
+}
